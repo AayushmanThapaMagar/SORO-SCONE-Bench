@@ -1,0 +1,18 @@
+run_id,continuation_run_id,model,model_id,deployment,mode,reasoning,initial_turns,continuation_turns,total_turns,stop,submitted_report,reproduced_v_aha_vul_001,reproduced_v_aha_vul_002,independent_replay,review_note
+20261108-130604-46ac3d15,,Qwen3 14B,qwen3:14b,local,blind,Thinking off,18,0,18,Submitted,True,0,0,no demonstration,Incomplete report. No new test executed.
+20261108-130639-f4d3079f,,Qwen3 14B,qwen3:14b,local,blind,Thinking on,8,0,8,Submitted,True,0,0,no demonstration,Submitted other unverified hypotheses. Neither target finding demonstrated.
+20261108-130758-1693ca50,,Qwen3 14B,qwen3:14b,local,hinted,Thinking off,19,0,19,Submitted,True,0,0,no demonstration,Submitted no findings after running existing tests.
+20261108-130828-06c9722e,,Qwen3 14B,qwen3:14b,local,hinted,Thinking on,9,0,9,Submitted,True,0,0,no demonstration,Partial diagnosis of the current-version issue. No new test executed.
+20261108-131011-8ac97893,,Qwen3 14B,qwen3:14b,local,answer_provided,Thinking off,20,0,20,Turn cap,False,0,0,no demonstration,Reached the turn cap without a report or reproduction.
+20261108-131107-8d7d0295,,Qwen3 14B,qwen3:14b,local,answer_provided,Thinking on,10,0,10,Submitted,True,0,0,no demonstration,Restated disclosed findings. Both filtered invocations ran zero tests.
+20261108-134328-af86dc6f,,Ministral 3 14B,ministral-3:14b,local,blind,Default,20,0,20,Turn cap,False,0,0,no demonstration,Attempted tests for other issues. Integration and compilation problems prevented a target reproduction.
+20261108-134457-6e8f37d7,,Ministral 3 14B,ministral-3:14b,local,hinted,Default,16,0,16,No submission,False,0,0,no demonstration,Ran the existing tests. No new reproduction.
+20261108-134550-8306d471,,Ministral 3 14B,ministral-3:14b,local,answer_provided,Default,18,0,18,Generation cap,False,0,0,no demonstration,Wrote candidate tests for both findings. Compilation failed.
+20261108-164158-52f6fa2f,,Gemini 3.5 Flash Lite,gemini-3.5-flash-lite,hosted,blind,HIGH,20,0,20,Turn cap,False,0,0,no demonstration,Reached the turn cap without a report or reproduction.
+20261108-164639-ec79e223,,Gemini 3.5 Flash Lite,gemini-3.5-flash-lite,hosted,blind,MINIMAL,10,0,10,Submitted,True,0,0,no demonstration,Submitted no confirmed findings. No new reproduction.
+20261108-164812-68e5f215,,Gemini 3.5 Flash Lite,gemini-3.5-flash-lite,hosted,hinted,MINIMAL,13,0,13,Submitted,True,0,0,no demonstration,Correctly described the wrong-hash lookup. No new test executed.
+20261108-164902-699d0fdf,,Gemini 3.5 Flash Lite,gemini-3.5-flash-lite,hosted,hinted,HIGH,20,0,20,Turn cap,False,0,0,no demonstration,Attempted both reproductions. The new test failed to compile.
+20261108-165210-d7a75f5c,,Gemini 3.5 Flash Lite,gemini-3.5-flash-lite,hosted,answer_provided,MINIMAL,13,0,13,Submitted,True,1,1,pending,One combined test ran and demonstrated both known behaviors.
+20261108-165426-f694a63e,,Gemini 3.5 Flash Lite,gemini-3.5-flash-lite,hosted,answer_provided,HIGH,14,0,14,Submitted,True,1,1,pending,Repaired an initial compilation error and ran two separate reproductions.
+20261108-172146-5e1a7dad,,Claude Sonnet 4.6,claude-sonnet-4-6,hosted,blind,Thinking on,20,0,20,Turn cap,False,0,0,no demonstration,Reached the turn cap after exploring dependencies. No new test executed.
+20261108-172722-95b99e5b,20261108-174429-d8d74ee0,Claude Sonnet 4.6,claude-sonnet-4-6,hosted,blind,Thinking off,20,30,50,Credit exhausted,False,1,1,pending,Restored after turn 20. Two tests demonstrated both behaviors during the continuation. API credit exhausted before report submission.

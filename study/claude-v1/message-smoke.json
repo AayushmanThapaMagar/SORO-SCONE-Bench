@@ -1,0 +1,41 @@
+{
+  "purpose": "integration_check",
+  "counts_as_study_attempt": false,
+  "response": {
+    "model": "claude-sonnet-4-6",
+    "id": "msg_011CgqmL9NTb4Ayf7YfPoBMW",
+    "type": "message",
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "Claude connected."
+      }
+    ],
+    "container": null,
+    "stop_reason": "end_turn",
+    "stop_sequence": null,
+    "stop_details": null,
+    "usage": {
+      "input_tokens": 13,
+      "cache_creation_input_tokens": 0,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 0
+      },
+      "output_tokens": 6,
+      "service_tier": "standard",
+      "inference_geo": "global",
+      "speed": "standard"
+    },
+    "diagnostics": null,
+    "_budget": {
+      "entry_id": "054dee26b2af4c73b718bfc6011af51f",
+      "accounted_request_usd": "0.000129",
+      "accounted_total_usd": "0.000129",
+      "allowance_usd": "4.00",
+      "estimated_input_tokens": 13
+    }
+  }
+}

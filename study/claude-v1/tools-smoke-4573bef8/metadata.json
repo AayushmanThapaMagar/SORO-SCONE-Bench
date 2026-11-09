@@ -1,0 +1,11 @@
+{
+  "purpose": "tool_roundtrip_integration_check",
+  "counts_as_study_attempt": false,
+  "model": "claude-sonnet-4-6",
+  "thinking": {
+    "type": "enabled",
+    "budget_tokens": 1024
+  },
+  "tool_calls": 1,
+  "passed": true
+}

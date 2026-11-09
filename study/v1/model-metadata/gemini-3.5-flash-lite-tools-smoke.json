@@ -1,0 +1,82 @@
+{
+  "purpose": "tool_roundtrip_integration_check",
+  "counts_as_study_attempt": false,
+  "requested_model": "gemini-3.5-flash-lite",
+  "generation_config": {
+    "maxOutputTokens": 2048,
+    "thinkingConfig": {
+      "thinkingLevel": "HIGH"
+    }
+  },
+  "first_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "name": "get_test_marker",
+                "args": {
+                  "label": "probe"
+                },
+                "id": "call_4403843055556928183"
+              },
+              "thoughtSignature": "Et0CCtoCAWkUfRMv6zgFtBEYYavyRrzA3q9iqM5xTDQc7Eteb5e/RGhbcU8hT2p/lcW7WIKKrl5Q6m1vm6kw/C48SegZjfz9+02R5FqPKBHDjqoh2Gjai+4JKOnrht2PvXtqxQw30b1ted5eMoHlJQZMmot6rZCQ0OQQZU+CpFzViPLCnTC+u4UA39+GEP1xVosoZM5M9vDzw25BSqKm7S87yxauWspvChwPh5NPusZiMP2GG4wCVZ+yYdwIGrHrgTttVGXq9r7whqZQClxy2j+igWVw2ZHp+T6sa5dyGzJiHPh+0mBqEtjfjPFPBz0ud5tEHsp+lZu6skaWdE0IQRuHD6d6gVgdCP/0DNaHoZOxFM9tt0FgLy3RRRb3qDiOlHQHQpe+zzYUwzNj7eIkEUXotbl8cU+pBjylraQDz/vQDLKmXUaOXuKe1IgoBV7JgHtXslnfRYjJg44Kgni1mg=="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0,
+        "finishMessage": "Model generated function call(s)."
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 67,
+      "candidatesTokenCount": 18,
+      "totalTokenCount": 154,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 67
+        }
+      ],
+      "thoughtsTokenCount": 69,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash-lite",
+    "responseId": "N5LwavrsMYLVz7sP7pPGwAg"
+  },
+  "second_response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "The test marker returned by the tool is: `soro-tool-check-passed`",
+              "thoughtSignature": "Es4BCssBAWkUfRMx72PkPaWKDmNYsnWZNxjLj2Ic+9/ybfJS8oJHXRapccNYCrcNETwZEX8iv6ec611XpHZsXEbYlFFikpismtrTJZUdciT0plWDPDTyVqDmCKGyT35Vqae2i9lJi+i8NWXlbxI3biNGgTpaSWQNeJrrpeXOWdJLwovElxPAi95Y5p9OdUzWNjk21cDLPriD9bHeA3Qv1YFnlhlc/zSZOieZlC/no2gG1qi7JNkszKwWF3vuPJi7+7uwc3ay6hYqWpjvKUw/HFc="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 177,
+      "candidatesTokenCount": 19,
+      "totalTokenCount": 224,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 177
+        }
+      ],
+      "thoughtsTokenCount": 28,
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash-lite",
+    "responseId": "OpLwatn8KaexmNMP-OClwQU"
+  }
+}

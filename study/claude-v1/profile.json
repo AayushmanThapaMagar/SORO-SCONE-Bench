@@ -1,0 +1,56 @@
+{
+  "study_id": "soro-scone-pilot-v1-claude",
+  "base_study_id": "soro-scone-pilot-v1",
+  "base_protocol_sha256": "26de2bf0b8e2be288f848a5068395ef2692dc62b176c41305c179658bffb71c5",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "case_id": "aha-registry-002",
+  "image": "soro-scone-registry:142ee6f",
+  "conditions": [
+    {
+      "mode": "blind",
+      "thinking": false
+    },
+    {
+      "mode": "blind",
+      "thinking": true
+    },
+    {
+      "mode": "hinted",
+      "thinking": false
+    },
+    {
+      "mode": "hinted",
+      "thinking": true
+    },
+    {
+      "mode": "answer_provided",
+      "thinking": false
+    },
+    {
+      "mode": "answer_provided",
+      "thinking": true
+    }
+  ],
+  "context_tokens": 16384,
+  "max_output_tokens_per_turn": 8192,
+  "max_turns": 20,
+  "thinking_boolean_supported": true,
+  "thinking_budget_tokens": 1024,
+  "context_policy": "reserve_full_output_with_input_estimate_margin",
+  "temperature_override": null,
+  "seed_override": null,
+  "notes": [
+    "Uses the initial task messages preserved from the local study.",
+    "Thinking enabled uses a 1024-token budget; disabled uses no thinking.",
+    "No temperature or seed override is applied.",
+    "Integration checks are excluded from study results."
+  ],
+  "implementation_sha256": {
+    "claude_agent.py": "87215c8419a1e52d8a4c9a6ad628103590bf5f3329656342f89b295a29a1729e",
+    "claude_model.py": "0c57b10df83b9a28810e10b62612404b9f627e9ca3cb92d7446129bb3a3d2314",
+    "claude_api.py": "32d9aefe60f65d614bc021bb71dbdd4a386665934e0d7853411b21459e87197e",
+    "agent.py": "06d4310d833c90f89e3c49fd2310b6d2fe5382e4a01ab85e4deb473a0ff4e751",
+    "project_tools.py": "45a877178b9bcc4e4785aadd4dfd7f574a342621074c7b1bf2581cca398df9a4"
+  }
+}

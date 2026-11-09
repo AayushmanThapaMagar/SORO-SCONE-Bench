@@ -1,0 +1,57 @@
+{
+  "study_id": "soro-scone-pilot-v3-claude",
+  "base_study_id": "soro-scone-pilot-v1",
+  "base_protocol_sha256": "26de2bf0b8e2be288f848a5068395ef2692dc62b176c41305c179658bffb71c5",
+  "provider": "anthropic",
+  "model": "claude-sonnet-4-6",
+  "case_id": "aha-registry-002",
+  "image": "soro-scone-registry:142ee6f",
+  "conditions": [
+    {
+      "mode": "blind",
+      "thinking": false
+    },
+    {
+      "mode": "blind",
+      "thinking": true
+    },
+    {
+      "mode": "hinted",
+      "thinking": false
+    },
+    {
+      "mode": "hinted",
+      "thinking": true
+    },
+    {
+      "mode": "answer_provided",
+      "thinking": false
+    },
+    {
+      "mode": "answer_provided",
+      "thinking": true
+    }
+  ],
+  "input_limit_tokens": 32768,
+  "max_output_tokens_per_turn": 8192,
+  "max_turns": 20,
+  "thinking_boolean_supported": true,
+  "thinking_budget_tokens": 1024,
+  "context_policy": "independent_input_and_output_allowances",
+  "temperature_override": null,
+  "seed_override": null,
+  "notes": [
+    "Uses the initial task messages preserved from the local study.",
+    "Thinking enabled uses a 1024-token budget; disabled uses no thinking.",
+    "No temperature or seed override is applied.",
+    "Integration checks are excluded from study results."
+  ],
+  "implementation_sha256": {
+    "claude_agent_v2.py": "410fab51f238307b34222e701e9b8f36a110e705cd6f090c30c830b7ecfd4f73",
+    "claude_model_v2.py": "dca6781c0293465d2a0016b2c2b7e23b629112a8d4547a4e3ae98e4287e3064f",
+    "claude_api.py": "32d9aefe60f65d614bc021bb71dbdd4a386665934e0d7853411b21459e87197e",
+    "agent.py": "06d4310d833c90f89e3c49fd2310b6d2fe5382e4a01ab85e4deb473a0ff4e751",
+    "project_tools.py": "45a877178b9bcc4e4785aadd4dfd7f574a342621074c7b1bf2581cca398df9a4"
+  },
+  "comparison_note": "Separate 32768-token input and full output allowances. This differs from the local models' 16384-token context profile. All Claude versions share the existing spending ledger."
+}

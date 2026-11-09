@@ -1,0 +1,42 @@
+{
+  "purpose": "integration_smoke_test",
+  "counts_as_study_attempt": false,
+  "requested_model": "gemini-3.5-flash-lite",
+  "generation_config": {
+    "maxOutputTokens": 256,
+    "thinkingConfig": {
+      "thinkingLevel": "MINIMAL"
+    }
+  },
+  "response": {
+    "candidates": [
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "Gemini connected.",
+              "thoughtSignature": "EmAKXgFpFH0TOvdC3vpOu5ves28byr/atHlWnVkTxLSrYOfuArlMmcSzfO9CoVWdH6L9elcKSobhnaNhIHdmKKuV60O7JPBOQSXV4Kkq0ZaQn1vbHkl1ABVW/M0aegWtwu0="
+            }
+          ],
+          "role": "model"
+        },
+        "finishReason": "STOP",
+        "index": 0
+      }
+    ],
+    "usageMetadata": {
+      "promptTokenCount": 7,
+      "candidatesTokenCount": 4,
+      "totalTokenCount": 11,
+      "promptTokensDetails": [
+        {
+          "modality": "TEXT",
+          "tokenCount": 7
+        }
+      ],
+      "serviceTier": "standard"
+    },
+    "modelVersion": "gemini-3.5-flash-lite",
+    "responseId": "24nwaoq0IYTj4t4P_YfNsQ0"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "model": "claude-sonnet-4-6",
+  "id": "msg_011CgqmVB8tLqnx7MXZnyhfS",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "text",
+      "text": "The exact marker returned by the tool is:\n\n**`soro-check-882e27bd847d4b19aa22427bcbc77d3e`**"
+    }
+  ],
+  "container": null,
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 758,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 40,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "diagnostics": null,
+  "_budget": {
+    "entry_id": "d3ab009355874bdfba0faec347109262",
+    "accounted_request_usd": "0.002874",
+    "accounted_total_usd": "0.006504",
+    "allowance_usd": "4.00",
+    "estimated_input_tokens": 758
+  }
+}

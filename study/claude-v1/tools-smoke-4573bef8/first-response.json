@@ -1,0 +1,56 @@
+{
+  "model": "claude-sonnet-4-6",
+  "id": "msg_011CgqmUygZ3LZPRB95rhta6",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": "The user wants me to call get_test_marker with label 'probe' and report the exact marker returned.",
+      "signature": "Eu0CCqgBCBMYAipAtPA61rVCsQMljKpRLKGuVf/gnpdCmNlGjl/avXU0jk3AbR3kbnyuJH/1O5jl0Yaib42j/zgg4td0LBuMWToXRTIRY2xhdWRlLXNvbm5ldC00LTY4AEIIdGhpbmtpbmdaJDg0NWE0MjMyLTllZjktNGI4ZC1iYzI4LTYzMmVhMzY0NzJiY5oBEwoRY2xhdWRlLXNvbm5ldC00LTaoAZjDwtcGEgzed1RvTSHB2179YbwaDLmBDRTavNNUzUXyEyIw2dd9p7vJcRsAaN97vACQuWS1sAFhZGhcgoPU+KEoqq1me9l58D1ZBqPa4MMp24+hKnJvJ4XpT9ozjT2tA/JDzgfddaaodXm7Ayz+ymAObQ5Ob4wFOJcEYkFJKcdJEtXFhz0u5xw23GqcuC0wV6BCaFGD5+WU6x7zIU90lcwb/To5yqzQtVq2bCmoNDwm2ntfFswZoIFJEPZfR0WFXxn03by66oYYAQ=="
+    },
+    {
+      "type": "text",
+      "text": "Sure! Let me call `get_test_marker` with the label `'probe'` right away."
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_016w22CYASjnL5p9yEMSWnJr",
+      "name": "get_test_marker",
+      "input": {
+        "label": "probe"
+      },
+      "caller": {
+        "type": "direct"
+      }
+    }
+  ],
+  "container": null,
+  "stop_reason": "tool_use",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 612,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 111,
+    "output_tokens_details": {
+      "thinking_tokens": 29
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "diagnostics": null,
+  "_budget": {
+    "entry_id": "7ca123a8d06b4ed0af79f4ba9da70924",
+    "accounted_request_usd": "0.003501",
+    "accounted_total_usd": "0.003630",
+    "allowance_usd": "4.00",
+    "estimated_input_tokens": 612
+  }
+}

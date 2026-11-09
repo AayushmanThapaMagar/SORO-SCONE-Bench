@@ -1,0 +1,65 @@
+
+# Publish the source, study configuration, figures, and reviewed summaries.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/LICENSE.*
+!/pyproject.toml
+!/requirements*.txt
+!/runner/
+!/study/
+!/results/
+!/docs/
+
+# Keep the local model configuration and credentials private at any depth.
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local inputs, raw runs, and generated study artifacts.
+/benchmarks/
+/examples/
+/runs/
+/four-model*-results-review.json
+/study/**/results/
+/study/**/spending.json
+/study/**/spending.json.*
+/study/**/spending.lock
+
+# Publish reviewed CSV/JSON/Markdown summaries from results/.
+/results/*
+!/results/*.csv
+!/results/*.json
+!/results/*.md
+
+# The published figures live under docs/figures/.
+/docs/*
+!/docs/figures/
+/docs/figures/*
+!/docs/figures/*.svg
+
+# Build output, model downloads, virtual environments, and temporary files.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+target/
+node_modules/
+*.wasm
+*.gguf
+*.log
+*.bak
+*.before-*.py
+*.tmp
+*.tar
+*.tar.*
+*.tgz
+*.zip
+*.patch
+.DS_Store

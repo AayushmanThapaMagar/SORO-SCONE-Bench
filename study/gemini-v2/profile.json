@@ -1,0 +1,57 @@
+{
+  "study_id": "soro-scone-pilot-v2-gemini",
+  "base_study_id": "soro-scone-pilot-v1",
+  "base_protocol_sha256": "26de2bf0b8e2be288f848a5068395ef2692dc62b176c41305c179658bffb71c5",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "case_id": "aha-registry-002",
+  "image": "soro-scone-registry:142ee6f",
+  "conditions": [
+    {
+      "mode": "blind",
+      "reasoning_level": "MINIMAL"
+    },
+    {
+      "mode": "blind",
+      "reasoning_level": "HIGH"
+    },
+    {
+      "mode": "hinted",
+      "reasoning_level": "MINIMAL"
+    },
+    {
+      "mode": "hinted",
+      "reasoning_level": "HIGH"
+    },
+    {
+      "mode": "answer_provided",
+      "reasoning_level": "MINIMAL"
+    },
+    {
+      "mode": "answer_provided",
+      "reasoning_level": "HIGH"
+    }
+  ],
+  "input_limit_tokens": 32768,
+  "context_policy": "independent_input_and_output_allowances",
+  "resource_comparison_note": "32K input plus 8K output; not token-matched to the local 16K pilot.",
+  "max_output_tokens_per_turn": 8192,
+  "max_turns": 20,
+  "thinking_boolean": null,
+  "temperature_override": null,
+  "seed_override": null,
+  "notes": [
+    "Uses the initial task messages preserved from the local study.",
+    "MINIMAL is not equivalent to disabled thinking.",
+    "No temperature or seed override is applied.",
+    "Integration checks are excluded from study results."
+  ],
+  "implementation_sha256": {
+    "gemini_agent_v2.py": "8c419618615cb89be14e085b18ae43bceb052ee1602e4cad8a7d0418858c9281",
+    "gemini_model_v2.py": "fad83fd6e7cfb70a3ac7546ee8e46ae5a007306efa95500118907869efb0543c",
+    "gemini_model.py": "a5a97331bf84b4a3beb3efbe92ea669baca72e4372fdbe64e63c31cc513805c3",
+    "gemini_api.py": "932a73d692e2550f6b533899c9ca3a447b12253ce695274d6a47caa6d35944c4",
+    "agent.py": "06d4310d833c90f89e3c49fd2310b6d2fe5382e4a01ab85e4deb473a0ff4e751",
+    "project_tools.py": "45a877178b9bcc4e4785aadd4dfd7f574a342621074c7b1bf2581cca398df9a4"
+  }
+}
